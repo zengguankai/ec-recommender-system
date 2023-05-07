@@ -54,7 +54,11 @@ public class UserServiceImpl implements UserService {
             throw new BusinessException(EmBusinessError.LOGIN_FAIL);
         }
         return userModel;
+    }
 
+    @Override
+    public Integer countAllUser() {
+        return userModelMapper.countAllUser();
     }
 
     private String encodeByMd5(String password) throws UnsupportedEncodingException, NoSuchAlgorithmException {
