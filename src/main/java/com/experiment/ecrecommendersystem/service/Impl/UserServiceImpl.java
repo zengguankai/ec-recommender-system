@@ -1,7 +1,6 @@
 package com.experiment.ecrecommendersystem.service.Impl;
 import com.experiment.ecrecommendersystem.common.BusinessException;
 import com.experiment.ecrecommendersystem.common.EmBusinessError;
-import com.experiment.ecrecommendersystem.request.RegisterReq;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Service;
@@ -9,11 +8,8 @@ import com.experiment.ecrecommendersystem.dal.UserModelMapper;
 import com.experiment.ecrecommendersystem.model.UserModel;
 import com.experiment.ecrecommendersystem.service.UserService;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.RequestBody;
 import sun.misc.BASE64Encoder;
 
-import javax.annotation.Resource;
-import javax.validation.Valid;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
