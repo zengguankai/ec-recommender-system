@@ -1,4 +1,4 @@
-package com.experiment.ecrecommendersystem.model.request;
+package com.experiment.ecrecommendersystem.request;
 
 import javax.validation.constraints.NotBlank;
 

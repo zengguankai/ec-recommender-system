@@ -2,8 +2,8 @@ package com.experiment.ecrecommendersystem.controller.admin;
 
 import com.experiment.ecrecommendersystem.common.*;
 import com.experiment.ecrecommendersystem.model.SellerModel;
-import com.experiment.ecrecommendersystem.model.request.PageQuery;
-import com.experiment.ecrecommendersystem.model.request.SellerCreateReq;
+import com.experiment.ecrecommendersystem.request.PageQuery;
+import com.experiment.ecrecommendersystem.request.SellerCreateReq;
 import com.experiment.ecrecommendersystem.service.SellerService;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;

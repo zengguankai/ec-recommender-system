@@ -10,4 +10,5 @@ public interface SellerService {
     SellerModel get(Integer id);
     List<SellerModel> selectAll();
     SellerModel changeStatus(Integer id,Integer disableFlag) throws BusinessException;
+    Integer countAllSeller();
 }

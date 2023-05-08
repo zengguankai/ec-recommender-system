@@ -47,4 +47,9 @@ public class SellerServiceImpl implements SellerService {
         sellerModelMapper.updateByPrimaryKey(sellerModel);
         return sellerModel;
     }
+
+    @Override
+    public Integer countAllSeller() {
+        return sellerModelMapper.countAllSeller();
+    }
 }

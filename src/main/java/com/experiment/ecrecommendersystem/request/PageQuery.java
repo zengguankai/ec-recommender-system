@@ -1,4 +1,4 @@
-package com.experiment.ecrecommendersystem.model.request;
+package com.experiment.ecrecommendersystem.request;
 
 public class PageQuery {
     private Integer page =1;

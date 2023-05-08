@@ -3,6 +3,9 @@ package com.experiment.ecrecommendersystem.controller.admin;
 import com.experiment.ecrecommendersystem.common.AdminPermission;
 import com.experiment.ecrecommendersystem.common.BusinessException;
 import com.experiment.ecrecommendersystem.common.EmBusinessError;
+import com.experiment.ecrecommendersystem.service.CategoryService;
+import com.experiment.ecrecommendersystem.service.SellerService;
+import com.experiment.ecrecommendersystem.service.ShopService;
 import com.experiment.ecrecommendersystem.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -37,6 +40,15 @@ public class AdminController {
     @Autowired
     private UserService userService;
 
+    @Autowired
+    private SellerService sellerService;
+
+    @Autowired
+    private CategoryService categoryService;
+
+    @Autowired
+    private ShopService shopService;
+
 
     @RequestMapping("/index")
     @AdminPermission
@@ -50,6 +62,9 @@ public class AdminController {
 
         //index
         modelAndView.addObject("userCount",userService.countAllUser());
+        modelAndView.addObject("shopCount",shopService.countAllShop());
+        modelAndView.addObject("categoryCount",categoryService.countAllCategory());
+        modelAndView.addObject("sellerCount",sellerService.countAllSeller());
         return modelAndView;
     }
 

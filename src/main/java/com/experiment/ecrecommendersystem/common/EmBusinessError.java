@@ -14,7 +14,10 @@ public enum EmBusinessError {
     LOGIN_FAIL(2002,"手机号或密码错误"),
 
     //admin相关错误
-    ADMIN_SHOULD_LOGIN(30001,"管理员需登录");
+    ADMIN_SHOULD_LOGIN(30001,"管理员需登录"),
+
+    //category相关错误
+    CATEGORY_NAME_DUPLICATED(40001,"商家名已存在");
 
 
 
